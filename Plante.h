@@ -17,7 +17,7 @@ public:
     int arrose();
     int info();
 
-    Plante(/* args */);
+    Plante(std::string nom);
     ~Plante();
 };
 

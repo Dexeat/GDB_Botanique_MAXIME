@@ -22,7 +22,7 @@ int Plante::info(){
     return 0;
 }
 
-Plante::Plante(/* args */)
+Plante::Plante(std::string nom):_nom(nom)
 {
 }
 
