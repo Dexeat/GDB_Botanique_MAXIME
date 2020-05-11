@@ -11,11 +11,14 @@ private:
     int _coupe;
     int _water;
     std::string _nom;
+    int _engrais;
 public:
     int pousse();
     int coupe();
     int arrose();
-    int info();
+    int m_engrais();
+    std::string info_p();
+    int evolution();
 
     Plante(std::string nom);
     ~Plante();
