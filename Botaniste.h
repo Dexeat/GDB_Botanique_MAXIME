@@ -15,10 +15,13 @@ private:
 public:
     void ajoutplante(Plante);// add plante de base
     void consulterinventaire();
-    int achatengrais();
-    int achatplante(Plante);
-    int reventeplante();
-    int dormir();
+    void achatengrais();
+    void achatplante(Plante);
+    void reventeplante(int nb_inv);
+    void dormir();
+    void arrose();
+    void coupe();
+    void mettreengrais();
 
     Botaniste(/* args */);
     ~Botaniste();

@@ -17,13 +17,14 @@ int Plante::arrose(){
     return _water;
 }
 
-void Plante::m_engrais(){
+int Plante::m_engrais(){
     _engrais ++;
+    return _engrais;
 }
 
 string Plante::info_p()
 {
-    string str1 = "Votre Plante " + _nom + u8"a poussé pendant " + std::to_string(_grow) + u8" jour(s), a été arrosée " + std::to_string(_water) + u8" fois et a été coupée " + std::to_string(_coupe) + " fois";
+    string str1 = "Votre Plante " + _nom + u8" a pousse pendant " + std::to_string(_grow) + u8" jour(s), a ete arrosee " + std::to_string(_water) + u8" fois et a ete coupee " + std::to_string(_coupe) + " fois et votre plate a "+ std::to_string(_engrais)+" engrai(s)";
     return str1;
 }
 
@@ -38,6 +39,13 @@ void Plante::evolution(){
     
 }
 
+string Plante::nom(){
+    return _nom;
+}
+
+int Plante::getgrow(){
+    return _grow;
+}
 
 Plante::Plante(std::string nom) : _nom(nom), _grow(0), _coupe(0), _water(0)
 {
