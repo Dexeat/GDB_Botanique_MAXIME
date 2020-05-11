@@ -9,6 +9,7 @@ using namespace std;
 int main()
 {
     int choix;
+    int choixp;
     Plante *Jasmin = new Plante("Jasmin");
     Botaniste *Didier = new Botaniste();
     Didier->ajoutplante(*Jasmin);
@@ -16,7 +17,8 @@ int main()
 
     while (1)
     {
-        cout << "Menu:" << endl
+        cout
+             << "Menu:" << endl
              << "1.Inventaire" << endl
              << "2.Dormir" << endl
              << "3.Arroser" << endl
@@ -26,6 +28,16 @@ int main()
              << "7.Revendre Plante" << endl
              << "8.Mettre de l'engrais" << endl;
         cin >> choix;
+        cout << endl
+             << endl
+             << endl
+             << endl
+             << endl
+             << endl
+             << endl
+             << endl
+             << endl
+             << endl;
         if (choix == 1)
         {
             Didier->consulterinventaire();
@@ -52,7 +64,9 @@ int main()
         }
         if (choix == 7)
         {
-            /* code */
+            cout << "Quel plante voulez vous vendre ?" << endl;
+            cin >> choixp;
+            Didier->reventeplante(choixp);
         }
         if(choix == 8){
             Didier->mettreengrais();
