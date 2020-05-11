@@ -11,6 +11,7 @@ int main()
     Plante *Jasmin = new Plante("Jasmin");
     Botaniste *Didier = new Botaniste();
     Didier->ajoutplante(*Jasmin);
+    Didier->ajoutplante(*Jasmin);
     Didier->consulterinventaire();
 
     return 0;
