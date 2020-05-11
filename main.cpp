@@ -3,6 +3,7 @@
 #include <vector>
 #include "Plante.cpp"
 #include "Botaniste.cpp"
+//#include "Fleur.h"
 
 using namespace std;
 
@@ -14,7 +15,12 @@ int main()
     Botaniste *Didier = new Botaniste();
     Didier->ajoutplante(*Jasmin);
     
+    /*
+    Plante *Rose = new Plante("Rose");
+    Fleur *Rose = new Fleur; // création d'une fleur
 
+    Didier->ajoutfleur(*Rose);
+    */
     while (1)
     {
         cout

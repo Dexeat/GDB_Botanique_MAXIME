@@ -9,6 +9,12 @@ void Botaniste::consulterinventaire(){
     {
         std::cout << _inventaire[i].info_p() << std::endl;
     }
+    /*
+    for (size_t i = 0; i < _inventairef.size(); i++)
+    {
+        std::cout << _inventairef[i].info_p() << std::endl;
+    }
+    */
     std::cout << "Votre argent s'eleve a: $" << std::to_string(_argent) << std::endl;
     std::cout << "Vous avez " << std::to_string(_nb_engrais) << " engrai(s)" << std::endl;
 }
@@ -81,7 +87,11 @@ void Botaniste::reventeplante(int nb_inv)
         _argent += 100;
     }
 }
-
+/*
+void Botaniste::ajoutfleur(Fleur fleur){
+    _inventairef.push_back(fleur);
+}
+*/
 Botaniste::Botaniste(/* args */) : _argent(200), _nb_engrais(1)
 {
 }
