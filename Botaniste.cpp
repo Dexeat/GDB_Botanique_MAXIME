@@ -12,7 +12,7 @@ void Botaniste::consulterinventaire(){
     
 }
 
-Botaniste::Botaniste(/* args */)
+Botaniste::Botaniste(/* args */):_argent(200)
 {
 }
 
