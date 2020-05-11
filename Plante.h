@@ -16,9 +16,9 @@ public:
     int pousse();
     int coupe();
     int arrose();
-    int m_engrais();
+    void m_engrais();
     std::string info_p();
-    int evolution();
+    void evolution();
 
     Plante(std::string nom);
     ~Plante();

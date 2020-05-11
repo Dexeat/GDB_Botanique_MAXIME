@@ -17,7 +17,7 @@ int Plante::arrose(){
     return _water;
 }
 
-int Plante::m_engrais(){
+void Plante::m_engrais(){
     _engrais ++;
 }
 
@@ -28,7 +28,7 @@ string Plante::info_p()
 }
 
 
-int Plante::evolution(){
+void Plante::evolution(){
     if (_coupe < 2 && _water < 2)
     {
         if(_engrais > 0){

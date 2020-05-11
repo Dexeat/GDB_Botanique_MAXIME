@@ -4,7 +4,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
-#include "Plante.cpp"
+#include "Plante.h"
 
 class Botaniste
 {
@@ -13,8 +13,8 @@ private:
     int _nb_engrais;
     std::vector<Plante> _inventaire;
 public:
-    int ajoutplante(Plante);// add plante de base
-    int consulterinventaire();
+    void ajoutplante(Plante);// add plante de base
+    void consulterinventaire();
     int achatengrais();
     int achatplante(Plante);
     int reventeplante();
